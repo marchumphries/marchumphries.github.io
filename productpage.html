@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- To run the current sample code in your own environment, copy this to an html page. -->
+
+<html>
+<head>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jsrender.min.js"></script>
+  <link href="css/samples.css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="result"></div>
+
+<script id="personTmpl" type="text/x-jsrender">
+
+{{for productDetails}}
+
+  {{if id == ~product }}
+    <h1>{{:name}}</h1>
+    <p>Price: {{:price}}</p>
+    <p>Available in: {{for colours}} {{:fabric}} {{/for}}</p>
+    <h2>Features</h2>
+    <ul>
+    {{for features}}
+      <li>{{:feature}}</li>
+    {{/for}}
+    </ul>
+    <p>Categories: {{for categories}} {{:cat}}, {{/for}}</p>
+    
+  {{/if}}
+
+{{/for}}
+
+<h4>Other items in the range</h4>
+{{for productDetails}}
+  {{if id != ~product }}
+  <h3>{{:name}}</h3>
+  <p><a href="jsrender-3.html?productId={{:id}}">View {{:name}}</a></p>
+  {{/if}}
+{{/for}}
+</script>
+
+<script>
+  
+// Get URL Param
+var getUrlParameter = function getUrlParameter(sParam) {
+  var sPageURL = window.location.search.substring(1),
+    sURLVariables = sPageURL.split('&'),
+    sParameterName,
+    i;
+
+  for (i = 0; i < sURLVariables.length; i++) {
+    sParameterName = sURLVariables[i].split('=');
+
+    if (sParameterName[0] === sParam) {
+        return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+    }
+  }
+};
+  
+var product = getUrlParameter('productId');  
+  
+// Compiled template
+var tmpl = $.templates("#personTmpl");
+
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    person = JSON.parse(this.responseText);
+    filter = {product};
+    $("#result").html(tmpl.render(person, filter));
+  }
+};
+xmlhttp.open("GET", "json/demo.json", true);
+xmlhttp.send();
+
+</script>
+
+</body>
+</html>
