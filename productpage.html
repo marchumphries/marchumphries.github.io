@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<!-- To run the current sample code in your own environment, copy this to an html page. -->
-
 <html>
 <head>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -8,7 +6,6 @@
   <link href="https://www.jsviews.com/samples/samples.css" rel="stylesheet" />
 </head>
 <body>
-
 <div id="result"></div>
 
 <script id="personTmpl" type="text/x-jsrender">
@@ -25,15 +22,20 @@
       <li>{{:feature}}</li>
     {{/for}}
     </ul>
-    <p>Categories: {{for categories}} {{:cat}}, {{/for}}</p>
+    <p>Category: {{for categories}} {{:cat}} {{/for}}</p>
+    
+    <hr>
+    <p><a href="categorypage.html?categoryId={{:categories.cat}}">&lt; back to all {{:categories.cat}}</a></p>
+
     
   {{/if}}
 
 {{/for}}
 
+
 <h4>Other items in the range</h4>
 {{for productDetails}}
-  {{if id != ~product }}
+  {{if id != ~product && categories.cat == categories.cat}}
   <h3>{{:name}}</h3>
   <p><a href="productpage.html?productId={{:id}}">View {{:name}}</a></p>
   {{/if}}
@@ -72,7 +74,7 @@ xmlhttp.onreadystatechange = function() {
     $("#result").html(tmpl.render(person, filter));
   }
 };
-xmlhttp.open("GET", "demo.json", true);
+xmlhttp.open("GET", "json/demo.json", true);
 xmlhttp.send();
 
 </script>
