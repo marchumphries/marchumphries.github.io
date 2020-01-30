@@ -13,10 +13,8 @@
     {"feature":"Part of a set"},
     {"feature":"Cushions"}
   ],
-  "categories":[
-    {"cat": "seating"},
-    {"cat": "living and dining"}
-  ]
+  "categories":
+    {"cat": "seating"}
 },
 {
   "id":"002",
@@ -31,11 +29,9 @@
     {"feature":"Part of a set"},
     {"feature":"arms and legs"}
   ],
-  "categories":[
-    {"cat": "seating"},
-    {"cat": "living and dining"}
-  ]
-},
+  "categories":
+    {"cat": "seating"}
+},  
 {
   "id":"003",
   "name":"Stool",
@@ -49,8 +45,6 @@
     {"feature":"Part of a set"},
     {"feature":"arms and legs"}
   ],
-  "categories":[
-    {"cat": "seating"},
-    {"cat": "living and dining"}
-  ]
+  "categories":
+    {"cat": "extras"}
 }]}
