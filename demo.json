@@ -1,0 +1,56 @@
+
+{"productDetails":[{
+  "id":"001",
+  "name":"Sofa",
+  "price":"£3,100",
+  "colours":[
+    {"fabric": "Blue"},
+    {"fabric": "Yellow"}
+  ],
+  "features":[
+    {"feature":"Free delivery"},
+    {"feature":"Cusomisable"},
+    {"feature":"Part of a set"},
+    {"feature":"Cushions"}
+  ],
+  "categories":[
+    {"cat": "seating"},
+    {"cat": "living and dining"}
+  ]
+},
+{
+  "id":"002",
+  "name":"Chair",
+  "price":"£1,300",
+  "colours":
+    {"fabric": "red"}
+  ,
+  "features":[
+    {"feature":"Free delivery"},
+    {"feature":"Cusomisable"},
+    {"feature":"Part of a set"},
+    {"feature":"arms and legs"}
+  ],
+  "categories":[
+    {"cat": "seating"},
+    {"cat": "living and dining"}
+  ]
+},
+{
+  "id":"003",
+  "name":"Stool",
+  "price":"£600",
+  "colours":
+    {"fabric": "red"}
+  ,
+  "features":[
+    {"feature":"Free delivery"},
+    {"feature":"Cusomisable"},
+    {"feature":"Part of a set"},
+    {"feature":"arms and legs"}
+  ],
+  "categories":[
+    {"cat": "seating"},
+    {"cat": "living and dining"}
+  ]
+}]}
