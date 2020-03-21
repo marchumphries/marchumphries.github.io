@@ -93,7 +93,7 @@
       <div class="accordion mb-3" id="accordionDetails">
         <div class="card">
 
-          <a href="#" data-toggle="collapse" data-target="#productDesc" aria-expanded="true" aria-controls="productDesc">
+          <a href="#" class="border-top border-primary" data-toggle="collapse" data-target="#productDesc" aria-expanded="true" aria-controls="productDesc">
             <div class="card-header" id="productDescTitle">
               <p class="mb-0">
                 Description
@@ -107,7 +107,7 @@
             </div>
           </div>
 
-          <a href="#" data-toggle="collapse" data-target="#productDimension" aria-expanded="false" aria-controls="productDimension">
+          <a href="#" class="border-top border-primary" data-toggle="collapse" data-target="#productDimension" aria-expanded="false" aria-controls="productDimension">
             <div class="card-header" id="productDimsTitle">
               <p class="mb-0">
                 Dimensions
@@ -121,7 +121,7 @@
             </div>
           </div>
 
-          <a href="#" data-toggle="collapse" data-target="#productDelivery" aria-expanded="false" aria-controls="productDelivery">
+          <a href="#" class="border-top border-primary" data-toggle="collapse" data-target="#productDelivery" aria-expanded="false" aria-controls="productDelivery">
             <div class="card-header" id="productDeliveryTitle">
               <p class="mb-0">
                 Delivery information
@@ -157,7 +157,7 @@
 
       <hr />
       <p><strong>{{:name}}</strong>: <span id="selectedColour"></span> {{:price}}</p>
-      <button class="btn btn-primary">Add to cart</button>
+      <button class="btn btn-primary text-white">Add to cart</button>
       
       </form>
       
@@ -170,7 +170,7 @@
     {{/if}}
   {{/for}}
 
-  <div class="col-12 mb-5">
+  <div class="col-12 mb-5"> 
     <h4 class="mb-3">Other items in the range</h4>
     <div class="row">
       {{for productDetails}}
