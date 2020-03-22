@@ -168,24 +168,30 @@ option {
 /* Buttons */
 
 a {
-  color: #413e4a;
+color: #413e4a;
 }
 
 a:hover {
-  color: #a86b96;
-  text-decoration: underline;
+color: #a86b96;
+text-decoration: underline;
 }
 
 .btn {
-  background-color: #a86b96;
-  border-color: #a86b96;
+background-color: #a86b96;
+border-color: #a86b96;
 }
 
 .btn:hover {
-  background-color: #413e4a;
-  border-color: #413e4a;
+background-color: #413e4a;
+border-color: #413e4a;
 }
 
 .border-primary {
-  border-color: #a86b96!important;
+border-color: #a86b96!important;
+}
+
+/* Product */
+.wasPrice {
+  text-decoration: line-through;
+  color: #999999;
 }
