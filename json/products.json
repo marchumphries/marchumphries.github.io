@@ -66,4 +66,99 @@
       "ogurl":"button back sofabed grey"
     }
   ]
+},
+{
+  "id":"CCOAW191803",
+  "url":"satin-oak-desk-with-filing",
+  "name":"Satin Oak Desk with Filing",
+  "price":"<span class='wasPrice'>&pound;699.00</span> &pound;549.00",
+  "description":"<p>This desk comes with a pen drawer and very helpful filing drawer. Choose the way you work with our satin oak collection</p>",
+  "dimensions":"<p><strong>Overall</strong>: 50cm × 114cm × 74cm</p>",
+  "keyimage":"img/CCOAW191803-key.jpg",
+  "images":[
+  ],
+  "colours":[
+    {"colour": "Satin Oak", "swatch":"img/swatches/fabric-black.jpg"}
+  ],
+  "features":[
+    {"feature":"Free delivery"},
+    {"feature":"Cusomisable"},
+    {"feature":"Part of a set"},
+    {"feature":"Cushions"}
+  ],
+  "deliveryinfo":"<p>We use a two man, white glove, delivery service for our larger items. The charges vary depending on the size and quantity of your order.</p><p></p><p>Once your order is ready for delivery to your home, you will receive a telephone call to arrange a mutually suitable date, which will be within 3-5 days of them contacting you.</p><p>On arrival the delivery team will request that you show them where you would like your item(s) delivered, so that they can see where they’re going.</p><p>They will unpack your item and take away all the packaging for you once you are happy with the item.</p><p>If your furniture requires some assembly there may be a charge, depending on what’s involved. Adding legs to tables for example will not incur any costs, but complex flat pack items are charged at £35 per 30 minutes. This is an optional service but products that are not put together by the delivery team are unable to be returned.</p>",
+  "categories":
+    {"cat": "Office"},
+  "meta":[
+    {
+      "ogtitle":"Button Back Bespoke Sofa",
+      "ogdescription":"button back sofabed grey",
+      "ogimage":"button back sofabed grey",
+      "ogurl":"button back sofabed grey"
+    }
+  ]
+},
+{
+  "id":"CCOAW191801",
+  "url":"satin-oak-corner-desk",
+  "name":"Satin Oak Corner Desk",
+  "price":"<span class='wasPrice'>£755.00</span> £549.00",
+  "description":"<p>Design your own office, starting with this corner unit and add any of the satin oak collection to make your perfect working environment</p>",
+  "dimensions":"<p><strong>Overall</strong>: 50cm × 105cm × 74cm</p>",
+  "keyimage":"img/CCOAW191801-key.jpg",
+  "images":[
+  ],
+  "colours":[
+    {"colour": "Satin Oak", "swatch":"img/swatches/fabric-black.jpg"}
+  ],
+  "features":[
+    {"feature":"Free delivery"},
+    {"feature":"Cusomisable"},
+    {"feature":"Part of a set"},
+    {"feature":"Cushions"}
+  ],
+  "deliveryinfo":"<p>We use a two man, white glove, delivery service for our larger items. The charges vary depending on the size and quantity of your order.</p><p></p><p>Once your order is ready for delivery to your home, you will receive a telephone call to arrange a mutually suitable date, which will be within 3-5 days of them contacting you.</p><p>On arrival the delivery team will request that you show them where you would like your item(s) delivered, so that they can see where they’re going.</p><p>They will unpack your item and take away all the packaging for you once you are happy with the item.</p><p>If your furniture requires some assembly there may be a charge, depending on what’s involved. Adding legs to tables for example will not incur any costs, but complex flat pack items are charged at £35 per 30 minutes. This is an optional service but products that are not put together by the delivery team are unable to be returned.</p>",
+  "categories":
+    {"cat": "Office"},
+  "meta":[
+    {
+      "ogtitle":"Button Back Bespoke Sofa",
+      "ogdescription":"button back sofabed grey",
+      "ogimage":"button back sofabed grey",
+      "ogurl":"button back sofabed grey"
+    }
+  ]
+},
+{
+  "id":"CCOAW192103",
+  "url":"bespoke-painted-bookcase",
+  "name":"Bespoke painted bookcase",
+  "price":"<span class='wasPrice'>£505.00</span> £419.00",
+  "description":"<p>Design your own office, starting with this corner unit and add any of the satin oak collection to make your perfect working environment</p>",
+  "dimensions":"<p><strong>Overall</strong>: 50cm × 105cm × 74cm</p>",
+  "keyimage":"img/CCOAW192103-key.jpg",
+  "images":[
+    {"image":"img/CCOAW192103-1.jpg", "alt":"button back sofabed grey"},
+    {"image":"img/CCOAW192103-2.jpg", "alt":"button back sofabed grey"}
+  ],
+  "colours":[
+    {"colour": "Satin Oak", "swatch":"img/swatches/fabric-black.jpg"}
+  ],
+  "features":[
+    {"feature":"Free delivery"},
+    {"feature":"Cusomisable"},
+    {"feature":"Part of a set"},
+    {"feature":"Cushions"}
+  ],
+  "deliveryinfo":"<p>We use a two man, white glove, delivery service for our larger items. The charges vary depending on the size and quantity of your order.</p><p></p><p>Once your order is ready for delivery to your home, you will receive a telephone call to arrange a mutually suitable date, which will be within 3-5 days of them contacting you.</p><p>On arrival the delivery team will request that you show them where you would like your item(s) delivered, so that they can see where they’re going.</p><p>They will unpack your item and take away all the packaging for you once you are happy with the item.</p><p>If your furniture requires some assembly there may be a charge, depending on what’s involved. Adding legs to tables for example will not incur any costs, but complex flat pack items are charged at £35 per 30 minutes. This is an optional service but products that are not put together by the delivery team are unable to be returned.</p>",
+  "categories":
+    {"cat": "Office"},
+  "meta":[
+    {
+      "ogtitle":"Button Back Bespoke Sofa",
+      "ogdescription":"button back sofabed grey",
+      "ogimage":"button back sofabed grey",
+      "ogurl":"button back sofabed grey"
+    }
+  ]
 }]}
