@@ -19,7 +19,7 @@
   <meta name="twitter:description" content="Luxury and Bespoke Interiors">
   <meta name="twitter:image" content="https://marchumphries.github.io/img/sofabed-in-berwick-khaki.jpg">
   
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
   <link href="css/bowerbirds.css" rel="stylesheet" />
 </head>
@@ -31,7 +31,7 @@
   
 <script id="headerTmpl" type="text/x-jsrender">
   {{for headerDetails}}
-    <a class="navbar-brand" href="#"><img src="{{:logo}}" /></a>
+    <a class="navbar-brand" href="index.html"><img src="{{:logo}}" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -54,129 +54,29 @@
 </script>
 
 <script id="personTmpl" type="text/x-jsrender">
-  {{for productDetails}}
-    {{if url == ~product }}
-
-    <div class="col-12 py-2">
-      <p class="mb-0">Back to {{for categories}} <a href="">{{:cat}}</a> {{/for}}</p> 
-    </div>
-
-    <div class="col-12 col-md-8 mx-auto mt-2 mb-5 text-center">
-      <h1>{{:name}}</h1>
-      <h4>{{:price}}</h4>
-    </div>
-
-    <div class="col-12 col-md-6 px-0 mb-5">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="{{:keyimage}}" class="d-block w-100" alt="{{:alt}}">
-          </div>
-          {{for images}} 
-          <div class="carousel-item">
-            <img src="{{:image}}" class="d-block w-100" alt="{{:alt}}">
-          </div>
-          {{/for}}
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-5 mx-auto mb-5">
-      <div class="accordion mb-3" id="accordionDetails">
-        <div class="card">
-
-          <a href="#" class="border-top border-primary" data-toggle="collapse" data-target="#productDesc" aria-expanded="true" aria-controls="productDesc">
-            <div class="card-header" id="productDescTitle">
-              <p class="mb-0">
-                Description
-              </p>
-            </div>
-          </a>
-
-          <div id="productDesc" class="collapse show" aria-labelledby="productDescTitle" data-parent="#accordionDetails">
-            <div class="card-body">
-              {{:description}}
-            </div>
-          </div>
-
-          <a href="#" class="border-top border-primary" data-toggle="collapse" data-target="#productDimension" aria-expanded="false" aria-controls="productDimension">
-            <div class="card-header" id="productDimsTitle">
-              <p class="mb-0">
-                Dimensions
-              </p>
-            </div>
-          </a>
-
-          <div id="productDimension" class="collapse" aria-labelledby="productDimsTitle" data-parent="#accordionDetails">
-            <div class="card-body">
-              {{:dimensions}}
-            </div>
-          </div>
-
-          <a href="#" class="border-top border-primary" data-toggle="collapse" data-target="#productDelivery" aria-expanded="false" aria-controls="productDelivery">
-            <div class="card-header" id="productDeliveryTitle">
-              <p class="mb-0">
-                Delivery information
-              </p>
-            </div>
-          </a>
-
-          <div id="productDelivery" class="collapse" aria-labelledby="productDeliveryTitle" data-parent="#accordionDetails">
-            <div class="card-body">
-              {{:deliveryinfo}}
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-  <!-- 
-      <h2>Features</h2>
-      <ul>
-      {{for features}}
-        <li>{{:feature}}</li>
-      {{/for}}
-      </ul>
-  -->
-      <h4>Colours</h4>
-      <form id="productSelect">
-      {{for colours}} 
-      <div class="custom-control custom-radio custom-control-inline radio_hidden mb-3">
-        <input type="radio" id="{{:colour}}" name="colourPicker" class="custom-control-input" value="{{:colour}}">
-        <label class="custom-control-label" for="{{:colour}}"><img src="{{:swatch}}" alt="{{:colour}}" /> {{:colour}} </label>
-      </div>
-      {{/for}}
-
-      <hr />
-      <p><strong>{{:name}}</strong>: <span id="selectedColour"></span> {{:price}}</p>
-      <button class="btn btn-primary text-white">Add to cart</button>
-      
-      </form>
-      
-      <hr />
-      <p><strong>Love this?</strong> Save it to your pinterest or share with others.</p>
-      <a data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=http://www.foodiecrush.com/2014/03/filet-mignon-with-porcini-mushroom-compound-butter/&media=https://i.pinimg.com/736x/17/34/8e/17348e163a3212c06e61c41c4b22b87a.jpg&description=So%20delicious!" data-pin-custom="true"><img src="https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png" width="25" height="25"></a>
-      <hr />
-      
-    </div>
-    {{/if}}
-  {{/for}}
-
   <div class="col-12 mb-5"> 
-    <h4 class="mb-3">Other items in the range</h4>
+    <h4 class="mb-3">Office</h4>
     <div class="row">
       {{for productDetails}}
-        {{if url != ~product && categories.cat == categories.cat}}
+        {{if categories.cat == "Office"}}
         <div class="col-6 col-md-3">
-          <a href="index.html?productId={{:url}}">
+          <a href="product.html?productId={{:url}}">
+            <img src="{{:keyimage}}" class="d-block w-100 mb-2" alt="{{:alt}}">
+            <h4>{{:name}}</h4>
+          </a>
+        </div>
+        {{/if}}
+      {{/for}}
+    </div>
+  </div>
+  
+  <div class="col-12 mb-5"> 
+    <h4 class="mb-3">Seating</h4>
+    <div class="row">
+      {{for productDetails}}
+        {{if categories.cat == "Seating"}}
+        <div class="col-6 col-md-3">
+          <a href="product.html?productId={{:url}}">
             <img src="{{:keyimage}}" class="d-block w-100 mb-2" alt="{{:alt}}">
             <h4>{{:name}}</h4>
           </a>
